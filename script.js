@@ -17,3 +17,12 @@ function sumArray(arr)
 }
 
 console.log(sumArray([2,4,5,6,7]));
+
+function checkEmail(emailString){
+    var emailFormat= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
+    var match=emailFormat.test(emailString);
+    return match;
+}
+console.log(checkEmail("john@Smith.com"));
+console.log(checkEmail("johnsmith.com"));
+   
